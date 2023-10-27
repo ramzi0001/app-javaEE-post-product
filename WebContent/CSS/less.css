@@ -1,0 +1,396 @@
+@charset "ISO-8859-1";
+
+    /* Design based on Blue Login Field of Kevin Sleger https://codepen.io/MurmeltierS/pen/macKb */
+
+body {
+  background: #44c4e7 url("") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
+ 
+ /* body::before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #44c4e7;
+    
+    background: rgba(68,196,231, 0.8);
+    width: 100%;
+    height: 100%;
+  }*/
+
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 285px;
+  margin: -140px 0 0 -182px;
+  padding: 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);}
+  
+  h2 ,.blogin{
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 1;
+    color: #44c4e7;
+    font-size: 18px;
+    font-weight: 400;
+  }
+ 
+  .inputform {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    font-size: 14px;
+    font-wieght: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: 0.2s linear;}
+    
+    .inputform:focus {
+      color: #333;
+      border: 1px solid #44c4e7;
+    }
+  
+  button {
+    cursor: pointer;
+    background: #44c4e7;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;}
+    button:hover {
+      background: #369cb8;
+    }
+
+
+.error{display:none;
+
+    cursor: pointer;
+    background: rgb(255, 0, 0);
+    width: 90%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;}
+    
+    .error :hover {
+      background: #369cb8;
+    }
+    
+    .succefull{display:none;
+    text-align:center;
+    cursor: pointer;
+    background: green;
+    width: 90%;
+    padding: 10px 15px;
+    border: 0;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;}
+    .labelform{
+     color : #226066}
+     
+     
+     
+     
+     
+     #post{
+  background-color: #ffff80 ;
+  width: 95% ;
+  max-width: 600px;
+  padding: 5px;
+  font-size: 20px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#containerpost{
+  display: block ;
+
+}
+#image{
+  width: 80px ;
+  height: 80px ;
+  border: 2px solid #44c4e7  ;
+   border-radius: 50%;
+}
+#imagepost{
+  width: 100%;
+  border-radius: 0px ;
+  margin: auto;
+  display: block;
+
+}
+#validation ,#validationupdate{
+  text-align: center;
+  z-index: 11;
+  background-color: white;
+  position:fixed;
+  left:29.5%;
+  margin-left:-27%;
+  top:35%;
+  margin-top: -10%;
+  width: 95%;
+  display: none;
+  height: 60%;
+  box-shadow: 700px 300px 700px 3000px rgba(0.9,0.9,0.9,0.9);
+}
+#cancelbtn ,#cancelbtnremove{
+  display: block;
+  float: right;
+  bottom: 1px;
+  right: 6px;
+  background: red;
+  width: 80px;
+  border: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#validebtn{
+  display: block;
+  float: right;
+  bottom: 1px;
+  right: 86px;
+  background: #3499db;
+  width: 80px;
+  border: none;
+  position: absolute;
+  font-size: 18px;
+  padding: 7px;
+  margin: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color:white;
+}
+#validebtn:hover{
+  color:green;
+
+}
+
+
+.profilevd{
+  width: 95% ;
+  padding: 2px;
+  font-size: 20px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  border-bottom: 1px solid black ;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: 75px;
+
+}
+#donnevd{
+  font-family: lato;
+}
+#megadonnevd{
+  color:gray;
+  border: none ;
+}
+#megadonnevd:hover{
+  cursor: pointer;
+
+}
+ 
+ 
+.profile{
+  width: 95% ;
+  padding: 5px;
+  font-size: 20px;
+  margin: auto;
+  display: none;
+  margin-top: 30px;
+  border-bottom: 1px solid black ;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+#donne{
+  font-size: 30px;
+  font-family: lato;
+}
+#megadonne{
+  color:gray;
+  border: none ;
+  font-size: 25px;
+  width: 200px;
+}
+#megadonne:hover{
+  cursor: pointer;
+
+}
+#saveimage{
+  background-color:green ; 
+  width: 210px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  border-radius: 30% 0 30% 0;
+}
+#profileDisplay{
+  border: 3px solid green ;
+  width: 300px;
+  height:300px;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+#divdiv {
+  color: #727272;
+  text-align: center;
+}
+
+#pp {
+  margin: 16px;
+  font-size: 96px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+
+nav {
+  width:95%;
+  margin: 0px 0px 20px 0px;
+  background: #f9f9f9;
+  padding: 16px;
+  position:sticky;
+  top:2px;
+  }
+  .menuItems {
+    list-style: none;
+    display: flex;
+  
+}
+nav   li {
+      margin: 30px;}
+
+li    a {
+        text-decoration: none;
+        color: #8f8f8f;
+        font-size: 24px;
+        font-weight: 400;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+      }
+       
+li  a:hover{
+            width: 100%;
+            color: #8254ff;        
+            transition: all 0.5s ease-in-out;
+            transition: 0.5s;
+            
+          }
+    
+footer {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+  left:0px;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid;
+  }
+footer  a:hover {
+      border-bottom: 1px transparent;
+    }
+    
+    
+    
+ .searchbox{
+ position:absolute;
+ transform:translate(-50%,50%);
+ background:#2f3640;
+ height:40px;
+ border-radius:40px;
+ padding:10px;
+ }   
+ .searchbotton{
+ color:white ;
+ float: right;
+ width:40px;
+ height:40px;
+ border-radius:50%;
+ background:#2f3640;
+ display:flex ;
+ justify-content:center;
+ align-items:center ;
+ transition:0.4s ;
+ }   
+ .searchinput{
+ border:none;
+ background:none;
+ outline:none;
+ color:white;
+ font-size:16px;
+ width:340px;
+ height:40px;
+ 
+ 
+ 
+ }
+ 
+
+.searchbotton:hover{
+ background: white;
+ color:#2f3640;
+ 
+ }
+ .liste{
+  margin: auto;
+  display:block;
+ 
+ }
+ 
